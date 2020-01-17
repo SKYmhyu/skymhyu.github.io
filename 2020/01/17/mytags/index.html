@@ -10,7 +10,7 @@
     
     
     
-    <title>Hello World | 祁天缘的博客</title>
+    <title>mytags | 祁天缘的博客</title>
     <link href="”http://mhyu.top“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -113,10 +113,26 @@
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/初始页面/">初始页面</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/方法/">方法</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -143,19 +159,26 @@
         <i class="fa fa-home"></i>
         <a href="http://mhyu.top">祁天缘的博客</a>
         >
-        <span>Hello World</span>
+        <span>mytags</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/07/05/hello-world/">Hello World</a>
+                <a href="/2020/01/17/mytags/">mytags</a>
             </h1>
         </div>
         <div class="tag-article">
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-07-05
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/方法/">方法</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-17
             </span>
             
         </div>
@@ -165,32 +188,26 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/07/05/hello-world/">Hello World</a>
+                    <a href="/2020/01/17/mytags/">mytags</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2019-07-05
+                <i class="fa fa-calendar"></i> 2020-01-17
             </p>
             <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/方法/">方法</a>
+                
                 
                 
             </p>
         </center>
     </div>
     <div class="content-article">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="提取中文"><a href="#提取中文" class="headerlink" title="提取中文"></a>提取中文</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ import re</span><br><span class="line">$ re.compile(r<span class="string">'[\u4e00-\u9fa5]+'</span>).findall(strFiled)[0]</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     </div>
 </article>
@@ -201,7 +218,7 @@
 <script>
 	if(!window.commentConfig) {
       window.commentConfig = {}
-      window.commentConfig.title = 'Hello World'
+      window.commentConfig.title = 'mytags'
     }
 </script>
 
@@ -261,7 +278,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/07/05/hello-world/">Hello World</a>
+                    <a href="/2020/01/17/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/01/17/mytags/">mytags</a>
                 </span>
             </li>
             
@@ -283,7 +306,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/07/05/hello-world/">Hello World</a>
+                    <a href="/2020/01/17/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/01/17/mytags/">mytags</a>
                 </span>
             </li>
             
@@ -298,23 +327,27 @@
 
                 
                 <li>
-                    <a href="/2019/07/05/hello-world/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/01/17/mytags/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/07/05/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/01/17/mytags/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/07/05/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/01/17/mytags/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/初始页面/" style="font-size: 16.628489046072485px;" class="tag-cloud-link">初始页面</a>
+    
+    <a href="/tags/方法/" style="font-size: 14.109964293892158px;" class="tag-cloud-link">方法</a>
     
 </div>
                 
@@ -410,7 +443,7 @@
 <script src="https://myau.moe/js/comment/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Fri Jul 05 2019 18:42:04 GMT+0800'
+      window.commentConfig.id = 'Fri Jan 17 2020 10:49:03 GMT+0800'
       window.commentConfig.owner = ''
       window.commentConfig.repo = ''
       window.commentConfig.client_id = ''
@@ -418,7 +451,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Fri Jul 05 2019 18:42:04 GMT+0800',
+      	id: 'Fri Jan 17 2020 10:49:03 GMT+0800',
         owner: '',
         repo: '',
         client_id: '',
